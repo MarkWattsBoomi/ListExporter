@@ -1,0 +1,66 @@
+{
+  "name": "listexport",
+  "version": "1.0.0",
+  "description": "Export a list to csv",
+  "main": "index.js",
+  "scripts": {
+    "start": "webpack-dev-server",
+    "build": "webpack -p --config webpack.production.config.js",
+    "build-no-source-map": "webpack -p --config webpack.production.config.js --devtool none",
+    "upload": "node upload.js",
+    "update": "node update.js",
+    "debug": "ngrok http --host-header=rewrite 8080",
+    "debug2": "ngrok http --region eu --host-header=rewrite 8080"
+  },
+  "author": "Dell Boomi",
+  "license": "MIT",
+  "dependencies": {
+    "acorn": "^6.4.1",
+    "core-js": "^3.6.4",
+    "dedent": "^0.7.0",
+    "flow-component-model": "^1.4.15",
+    "react": "^16.3.2",
+    "react-dom": "^16.3.2"
+  },
+  "devDependencies": {
+    "@types/enzyme": "^3.1.11",
+    "@types/enzyme-adapter-react-16": "^1.0.2",
+    "@types/loglevel": "^1.5.3",
+    "@types/react": "^16.7.3",
+    "@types/react-dom": "^16.0.9",
+    "clipboardy": "^1.2.3",
+    "colors": "^1.3.1",
+    "css-loader": "^2.1.1",
+    "download": "^7.1.0",
+    "fs-extra": "^7.0.1",
+    "glob-promise": "^3.4.0",
+    "inquirer": "^6.0.0",
+    "inquirer-autocomplete-prompt": "^1.0.1",
+    "mime-types": "^2.1.19",
+    "mini-css-extract-plugin": "^0.5.0",
+    "react-test-renderer": "^16.4.1",
+    "recursive-copy": "^2.0.9",
+    "request-promise-native": "^1.0.5",
+    "source-map-loader": "^1.1.0",
+    "style-loader": "0.21.0",
+    "three-way-merger": "^0.5.0",
+    "ts-loader": "^8.0.4",
+    "tslint": "^5.10.0",
+    "tslint-loader": "3.6.0",
+    "tslint-react": "^3.6.0",
+    "typescript": "^4.0.0",
+    "webpack": "^4.27.1",
+    "webpack-cli": "^3.3.5",
+    "webpack-dev-server": "^3.11.0",
+    "write-file-webpack-plugin": "4.4.1"
+  },
+  "flow": {
+    "filenames": {
+      "js": "listexport.js",
+      "css": "listexport.css"
+    }
+  },
+  "peerDependencies": {},
+  "bundledDependencies": [],
+  "optionalDependencies": {}
+}
